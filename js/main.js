@@ -162,6 +162,7 @@ closeSuccess.addEventListener('click', () => {
 /* ── 8. FLOWING MENU (Signature Rituals) ─────────────────────── */
 function initFlowingMenu() {
   const menuItems = document.querySelectorAll('.menu__item');
+  const mainRitualImg = document.getElementById('ritual-main-img');
   if (!menuItems.length) return;
 
   const animationDefaults = { duration: 0.6, ease: 'expo.out' };
@@ -224,6 +225,15 @@ function initFlowingMenu() {
 
     // 2. Hover logic
     link.addEventListener('mouseenter', ev => {
+      // Change main ritual img
+      if (mainRitualImg) {
+        mainRitualImg.style.opacity = '0.4';
+        setTimeout(() => {
+          mainRitualImg.src = image;
+          mainRitualImg.style.opacity = '1';
+        }, 150);
+      }
+
       const rect = item.getBoundingClientRect();
       const x = ev.clientX - rect.left;
       const y = ev.clientY - rect.top;
