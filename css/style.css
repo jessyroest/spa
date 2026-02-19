@@ -132,7 +132,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    1. NAVIGATION
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 #navbar {
   position: fixed;
   top: 0;
@@ -300,7 +300,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    2. HERO
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 #hero {
   position: relative;
   height: 100vh;
@@ -440,7 +440,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    3. MARQUEE
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 #marquee {
   background: var(--ink);
   overflow: hidden;
@@ -486,7 +486,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    4. PHILOSOPHY / INTRO
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 #intro {
   background: var(--cream);
   padding: 140px 0;
@@ -561,7 +561,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    5. TREATMENTS
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 #treatments {
   background: var(--cream);
   padding: 0 0 140px;
@@ -731,7 +731,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    6. ABOUT SERENOVA — DARK
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 #about {
   background: var(--ink);
   display: grid;
@@ -855,7 +855,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    7. TEAM
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 #team {
   background: var(--cream);
   padding: 140px 0;
@@ -941,7 +941,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    8. TESTIMONIALS
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 #testimonials {
   background: var(--ink);
   padding: 140px 0 100px;
@@ -1038,7 +1038,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    9. BOOKING CTA
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 #booking-cta {
   position: relative;
   overflow: hidden;
@@ -1137,7 +1137,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    10. BOOKING MODAL
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -1314,7 +1314,7 @@ button {
 
 /* ═══════════════════════════════════════════════════════════════
    11. FOOTER
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 #footer {
   background: var(--ink);
   padding: 80px 0 40px;
@@ -1455,8 +1455,116 @@ button {
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   8. SIGNATURE RITUALS (Flowing Menu)
+   ═══════════════════════════════════════════════════════════════ */
+#signature-menu {
+  background: var(--ink);
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.menu-wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item {
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu__item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: var(--ff-serif);
+  font-weight: 500;
+  font-size: clamp(2rem, 6vh, 4rem);
+  color: var(--white);
+  transition: color 0.4s ease;
+  z-index: 2;
+}
+
+.menu__item-link:hover {
+  color: var(--gold);
+}
+
+.marquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transform: translate3d(0, 101%, 0);
+  background: var(--gold);
+  z-index: 1;
+}
+
+.marquee__inner-wrap {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee__inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: fit-content;
+  will-change: transform;
+}
+
+.marquee__part {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--ink);
+}
+
+.marquee span {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-family: var(--ff-serif);
+  font-weight: 600;
+  font-size: clamp(2rem, 6vh, 4rem);
+  line-height: 1;
+  padding: 0 2vw;
+}
+
+.marquee__img {
+  width: 240px;
+  height: 8vh;
+  margin: 0 2vw;
+  border-radius: 60px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ═══════════════════════════════════════════════════════════════
    RESPONSIVE
-═══════════════════════════════════════════════════════════════ */
+   ═══════════════════════════════════════════════════════════════ */
 @media (max-width: 1100px) {
   .container {
     padding: 0 32px;
