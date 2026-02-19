@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1a1a18">
+    <title>Serenova — Spa &amp; Wellness Gent</title>
+    <meta name="description"
+        content="Serenova biedt premium spa-behandelingen in Gent. Massages, rituelen en gezichtsverzorging voor lichaam en geest.">
+    <meta property="og:title" content="Serenova — Spa &amp; Wellness Gent">
+    <meta property="og:description"
+        content="Unieke spa-behandelingen in het hart van Gent. Ontdek onze massages, rituelen en wellness-ervaringen.">
+    <meta property="og:type" content="website">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='16' fill='%231a1a18'/><path d='M16 5C16 5 9 11 9 19a7 7 0 0014 0C23 11 16 5 16 5Z' fill='%232c3a2a'/></svg>">
+    <link rel="stylesheet" href="css/style.css?v=5">
+</head>
+
+<body>
+
+    <!-- Skip link -->
+    <a href="#main-content" class="skip-link">Ga naar inhoud</a>
+
+    <!-- ══ MOBILE MENU ══ -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigatiemenu">
+        <a href="#treatments" class="mobile-nav-link">Behandelingen</a>
+        <a href="#about" class="mobile-nav-link">Over ons</a>
+        <a href="#team" class="mobile-nav-link">Team</a>
+        <a href="#testimonials" class="mobile-nav-link">Ervaringen</a>
+        <a href="#" class="mobile-nav-link open-modal">Reserveer</a>
+    </div>
+
+    <!-- ══ NAVBAR ══ -->
+    <nav id="navbar" role="navigation" aria-label="Hoofdnavigatie">
+        <a href="#" class="nav-logo">Serenova</a>
+        <ul class="nav-links" role="list">
+            <li><a href="#treatments">Behandelingen</a></li>
+            <li><a href="#about">Over ons</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#testimonials">Ervaringen</a></li>
+        </ul>
+        <button class="nav-cta open-modal" aria-label="Reserveer een behandeling">Reserveer</button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu openen" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- ══ HERO ══ -->
+    <section id="hero" id="main-content">
+        <div class="hero-img" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1800&q=85&auto=format&fit=crop"
+                alt="">
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+
+        <div class="hero-content">
+            <span class="hero-label">Premium Wellness</span>
+            <h1 class="hero-heading">
+                Rust voor lichaam
+                <em>en ziel</em>
+            </h1>
+        </div>
+
+        <div class="hero-bottom">
+            <div class="hero-scroll" aria-hidden="true">
+                <div class="hero-scroll-arrow">↓</div>
+                SCROLL
+            </div>
+            <div class="hero-geo">Gent, België — Est. 2012</div>
+        </div>
+
+        <div class="hero-pills" aria-hidden="true">
+            <div class="hero-pill" id="pill-1">Hot Stone</div>
+            <div class="hero-pill" id="pill-2">Aromatherapie</div>
+            <div class="hero-pill" id="pill-3">Hammam Ritueel</div>
+        </div>
+    </section>
+
+    <!-- ══ MARQUEE ══ -->
+    <div id="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span class="marquee-item">Verwennerij<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Hot Stone Massage<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Hammam Ritueel<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Organische Producten<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Anti-Age Behandeling<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Aromatherapie<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Rozenbad Ritueel<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Wellness Experience<span class="marquee-dot"></span></span>
+            <!-- duplicate for seamless loop -->
+            <span class="marquee-item">Verwennerij<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Hot Stone Massage<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Hammam Ritueel<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Organische Producten<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Anti-Age Behandeling<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Aromatherapie<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Rozenbad Ritueel<span class="marquee-dot"></span></span>
+            <span class="marquee-item">Wellness Experience<span class="marquee-dot"></span></span>
+        </div>
+    </div>
+
+    <!-- ══ INTRO / PHILOSOPHY ══ -->
+    <main id="main-content">
+        <section id="intro">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-left">
+                        <div class="section-label reveal">Onze filosofie</div>
+                        <h2 class="intro-heading reveal reveal-delay-1">
+                            Een heiligdom van <em>rust</em> en verwennerij
+                        </h2>
+                    </div>
+                    <div class="intro-right reveal reveal-delay-2">
+                        <p class="intro-text">
+                            Bij Serenova geloven we dat echte schoonheid van binnenuit komt. Ons heiligdom is ontworpen
+                            als een plek waar tijd stilstaat — alleen voor jou. Gecertificeerde therapeuten, biologische
+                            producten en een serene omgeving wachten op jou.
+                        </p>
+                        <a href="#treatments" class="intro-cta">Ontdek behandelingen →</a>
+                    </div>
+                </div>
+
+                <div class="intro-img reveal reveal-delay-3">
+                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=1200&q=85&auto=format&fit=crop"
+                        alt="Serenova spa interieur">
+                </div>
+            </div>
+        </section>
+
+        <!-- ══ TREATMENTS ══ -->
+        <section id="treatments">
+            <div class="container">
+                <div class="treatments-header">
+                    <div class="treatments-header-left">
+                        <div class="section-label reveal">Behandelingen</div>
+                        <h2 class="treatments-title reveal reveal-delay-1">Elke behandeling,<br>een unieke beleving</h2>
+                    </div>
+                    <div class="filter-tabs reveal reveal-delay-2" role="group" aria-label="Filter behandelingen">
+                        <button class="filter-btn active" data-filter="all">Alle behandelingen</button>
+                        <button class="filter-btn" data-filter="body">Lichaam</button>
+                        <button class="filter-btn" data-filter="face">Gezicht</button>
+                        <button class="filter-btn" data-filter="ritual">Rituelen</button>
+                    </div>
+                </div>
+
+                <div class="treatments-grid" id="treatmentsGrid">
+
+                    <article class="treatment-card reveal" data-category="body">
+                        <div class="treatment-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=800&h=600&q=80&auto=format&fit=crop"
+                                alt="Hot Stone Massage" loading="lazy">
+                            <span class="treatment-badge">Lichaam</span>
+                            <span class="treatment-num">01</span>
+                        </div>
+                        <div class="treatment-body">
+                            <h3 class="treatment-name">Hot Stone Massage</h3>
+                            <p class="treatment-desc">Warme basaltstenen ontspannen diep gespannen spieren. Een heerlijk
+                                zachte techniek voor optimale ontspanning van lichaam en geest.</p>
+                            <div class="treatment-meta">
+                                <span class="treatment-duration">90 min</span>
+                                <span class="treatment-price">€ 95</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal reveal-delay-1" data-category="face">
+                        <div class="treatment-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=800&h=600&q=80&auto=format&fit=crop"
+                                alt="Luxe Gezichtsbehandeling" loading="lazy">
+                            <span class="treatment-badge">Gezicht</span>
+                            <span class="treatment-num">02</span>
+                        </div>
+                        <div class="treatment-body">
+                            <h3 class="treatment-name">Luxe Gezichtsbehandeling</h3>
+                            <p class="treatment-desc">Diepgaande reiniging en intensieve hydratatie met botanische
+                                extracten voor een stralende, verfijnde huid.</p>
+                            <div class="treatment-meta">
+                                <span class="treatment-duration">60 min</span>
+                                <span class="treatment-price">€ 75</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal reveal-delay-2" data-category="ritual">
+                        <div class="treatment-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=800&h=600&q=80&auto=format&fit=crop"
+                                alt="Hammam Ritueel" loading="lazy">
+                            <span class="treatment-badge">Ritueel</span>
+                            <span class="treatment-num">03</span>
+                        </div>
+                        <div class="treatment-body">
+                            <h3 class="treatment-name">Hammam Ritueel</h3>
+                            <p class="treatment-desc">Het traditionele Oosterse badritueel: stoombad, zeepeeling en een
+                                argan-olie massage voor totale lichaamsverzorging.</p>
+                            <div class="treatment-meta">
+                                <span class="treatment-duration">120 min</span>
+                                <span class="treatment-price">€ 130</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal" data-category="body">
+                        <div class="treatment-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&h=600&q=80&auto=format&fit=crop"
+                                alt="Aromatherapie Massage" loading="lazy">
+                            <span class="treatment-badge">Lichaam</span>
+                            <span class="treatment-num">04</span>
+                        </div>
+                        <div class="treatment-body">
+                            <h3 class="treatment-name">Aromatherapie Massage</h3>
+                            <p class="treatment-desc">Zachte full-body massage met etherische oliën voor totale
+                                ontspanning van lichaam en zintuigen.</p>
+                            <div class="treatment-meta">
+                                <span class="treatment-duration">75 min</span>
+                                <span class="treatment-price">€ 85</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal reveal-delay-1" data-category="face">
+                        <div class="treatment-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&h=600&q=80&auto=format&fit=crop"
+                                alt="Anti-Age Behandeling" loading="lazy">
+                            <span class="treatment-badge">Gezicht</span>
+                            <span class="treatment-num">05</span>
+                        </div>
+                        <div class="treatment-body">
+                            <h3 class="treatment-name">Anti-Age Behandeling</h3>
+                            <p class="treatment-desc">Geavanceerde lifting met collageen-maskers en microcurrent voor
+                                een
+                                jeugdige, stralende huid die echt resultaat toont.</p>
+                            <div class="treatment-meta">
+                                <span class="treatment-duration">75 min</span>
+                                <span class="treatment-price">€ 110</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="treatment-card reveal reveal-delay-2" data-category="ritual">
+                        <div class="treatment-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1556228720-da1d889c3ef3?w=800&h=600&q=80&auto=format&fit=crop"
+                                alt="Rozenbad Ritueel" loading="lazy">
+                            <span class="treatment-badge">Ritueel</span>
+                            <span class="treatment-num">06</span>
+                        </div>
+                        <div class="treatment-body">
+                            <h3 class="treatment-name">Rozenbad Ritueel</h3>
+                            <p class="treatment-desc">Romantisch en herstellend ritueel: een privé-rozenbad,
+                                lichaamsscrub met rozenbottelolie en een glas champagne.</p>
+                            <div class="treatment-meta">
+                                <span class="treatment-duration">100 min</span>
+                                <span class="treatment-price">€ 145</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══ ABOUT (dark) ══ -->
+        <section id="about">
+            <div class="about-img-wrap">
+                <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=900&q=85&auto=format&fit=crop"
+                    alt="Serenova spa interieur">
+            </div>
+            <div class="about-content">
+                <div class="section-label reveal" style="color:var(--gold);">Over Serenova</div>
+                <h2 class="about-heading reveal reveal-delay-1">
+                    Meer dan een spa —<br><em>een ervaring</em>
+                </h2>
+                <p class="about-text reveal reveal-delay-2">
+                    Opgericht in 2012, is Serenova uitgegroeid tot een van Belgiës meest gewaardeerde
+                    wellness-bestemmingen. Met gecertificeerde therapeuten, biologische producten en een uitzonderlijke
+                    sfeer bieden wij een beleving die je nooit vergeet.
+                </p>
+
+                <div class="about-badges reveal reveal-delay-3">
+                    <!-- Biologisch -->
+                    <div class="about-badge">
+                        <div class="about-badge-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2C12 2 4 7 4 14a8 8 0 0016 0C20 7 12 2 12 2Z" />
+                                <path d="M12 14V6" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="about-badge-label">Biologisch</div>
+                        <div class="about-badge-text">100% dierproefvrije producten</div>
+                    </div>
+                    <!-- Gecertificeerd -->
+                    <div class="about-badge">
+                        <div class="about-badge-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="8" r="5" />
+                                <path d="M7 13l-3 8 8-3 8 3-3-8" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="about-badge-label">Gecertificeerd</div>
+                        <div class="about-badge-text">Internationaal opgeleide therapeuten</div>
+                    </div>
+                    <!-- Exclusief -->
+                    <div class="about-badge">
+                        <div class="about-badge-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2l2.5 7H22l-6 4.5 2.5 7L12 17l-6.5 3.5L8 13.5 2 9h7.5L12 2Z"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="about-badge-label">Exclusief</div>
+                        <div class="about-badge-text">Privéruimten &amp; persoonlijke service</div>
+                    </div>
+                    <!-- Duurzaam -->
+                    <div class="about-badge">
+                        <div class="about-badge-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M21 12a9 9 0 11-9-9c2.52 0 4.8 1.02 6.44 2.67" stroke-linecap="round" />
+                                <path d="M21 3v6h-6" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="about-badge-label">Duurzaam</div>
+                        <div class="about-badge-text">CO₂-neutraal, goed voor de planeet</div>
+                    </div>
+                </div>
+
+                <button class="about-cta open-modal reveal reveal-delay-4">
+                    Maak een afspraak →
+                </button>
+            </div>
+        </section>
+
+        <!-- ══ TEAM ══ -->
+        <section id="team">
+            <div class="container">
+                <div class="team-header">
+                    <div class="section-label reveal">Onze experts</div>
+                    <h2 class="team-title reveal reveal-delay-1">Ontmoet ons team</h2>
+                </div>
+                <div class="team-grid">
+                    <div class="team-card reveal">
+                        <div class="team-portrait">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&q=80&auto=format&fit=crop&crop=faces"
+                                alt="Sophie Martens">
+                        </div>
+                        <h3 class="team-name">Sophie Martens</h3>
+                        <p class="team-role">Head Therapeut &amp; Oprichter</p>
+                        <p class="team-bio">Met 14 jaar internationale ervaring brengt Sophie een unieke balans van
+                            wetenschap en intuïtie naar elke behandeling.</p>
+                    </div>
+
+                    <div class="team-card reveal reveal-delay-1">
+                        <div class="team-portrait">
+                            <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&h=400&q=80&auto=format&fit=crop&crop=faces"
+                                alt="Laila Hassan">
+                        </div>
+                        <h3 class="team-name">Laila Hassan</h3>
+                        <p class="team-role">Hammam &amp; Ritueel Specialist</p>
+                        <p class="team-bio">Opgeleid in Marokko brengt Laila authenticiteit en diepte naar onze oosterse
+                            rituelen, met aandacht voor elk detail.</p>
+                    </div>
+
+                    <div class="team-card reveal reveal-delay-2">
+                        <div class="team-portrait">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&q=80&auto=format&fit=crop&crop=faces"
+                                alt="Emma De Vries">
+                        </div>
+                        <h3 class="team-name">Emma De Vries</h3>
+                        <p class="team-role">Huidtherapeut &amp; Anti-Age Expert</p>
+                        <p class="team-bio">Emma combineert technologie met een holistische aanpak voor behandelingen
+                            die écht zichtbaar resultaat geven.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══ TESTIMONIALS ══ -->
+        <section id="testimonials">
+            <div class="container">
+                <div class="testimonials-header">
+                    <div class="section-label reveal" style="color:var(--gold);">Ervaringen</div>
+                    <h2 class="testimonials-title reveal reveal-delay-1">Wat onze gasten zeggen</h2>
+                </div>
+
+                <div class="testimonials-grid">
+
+                    <div class="testimonial-card reveal">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"De hot stone massage was absoluut hemels. Vol stress binnengekomen
+                            en vertrokken alsof ik op wolken liep. Serenova is mijn vaste plek."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80&auto=format&fit=crop&facepad=3"
+                                    alt="">
+                            </div>
+                            <div>
+                                <div class="testimonial-name">Nathalie Vermeersch</div>
+                                <div class="testimonial-meta">Hot Stone Massage · Gent</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card reveal reveal-delay-1">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"Het hammam-ritueel was een volledig nieuwe beleving. Laila is
+                            fantastisch — professioneel, warm en met oog voor elk detail. Aanrader!"</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&q=80&auto=format&fit=crop&facepad=3"
+                                    alt="">
+                            </div>
+                            <div>
+                                <div class="testimonial-name">Roos Lemmens</div>
+                                <div class="testimonial-meta">Hammam Ritueel · Antwerpen</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card reveal reveal-delay-2">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"Prachtig interieur, perfecte sfeer en een gezichtsbehandeling die
+                            mijn huid heeft getransformeerd. De beste spa-ervaring die ik ooit heb gehad!"</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80&auto=format&fit=crop&facepad=3"
+                                    alt="">
+                            </div>
+                            <div>
+                                <div class="testimonial-name">Hanne De Smedt</div>
+                                <div class="testimonial-meta">Luxe Gezichtsbehandeling · Brussel</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card reveal reveal-delay-3">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-quote">"Het rozenbad-ritueel was het mooiste cadeau dat ik mezelf ooit heb
+                            gegeven. Puur magie. Ik kom elke maand terug voor de aromatherapie."</p>
+                        <div class="testimonial-author">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80&auto=format&fit=crop&facepad=3"
+                                    alt="">
+                            </div>
+                            <div>
+                                <div class="testimonial-name">Lisa Claes</div>
+                                <div class="testimonial-meta">Rozenbad Ritueel · Leuven</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <p class="testimonials-count reveal">Gebaseerd op 847 reviews &middot; Gemiddeld 4.9/5</p>
+            </div>
+        </section>
+
+        <!-- ══ BOOKING CTA ══ -->
+        <section id="booking-cta">
+            <div class="booking-bg" aria-hidden="true">
+                <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1600&q=85&auto=format&fit=crop"
+                    alt="">
+            </div>
+            <div class="booking-overlay" aria-hidden="true"></div>
+            <div class="container">
+                <div class="booking-inner">
+                    <div class="booking-left">
+                        <div class="section-label reveal" style="color:var(--gold);">Online reserveren</div>
+                        <h2 class="booking-heading reveal reveal-delay-1">Jouw moment van rust begint hier</h2>
+                    </div>
+                    <div class="booking-right">
+                        <div class="booking-perks reveal reveal-delay-2">
+                            <div class="booking-perk">
+                                <span class="booking-perk-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M5 12l5 5L19 7" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="booking-perk-text">Gratis annuleren tot 24 uur voor de afspraak</span>
+                            </div>
+                            <div class="booking-perk">
+                                <span class="booking-perk-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M5 12l5 5L19 7" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="booking-perk-text">Bevestiging per e-mail en sms</span>
+                            </div>
+                            <div class="booking-perk">
+                                <span class="booking-perk-icon">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M5 12l5 5L19 7" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                                <span class="booking-perk-text">Cadeaubon beschikbaar voor dierbaren</span>
+                            </div>
+                        </div>
+                        <button class="btn-cta open-modal reveal reveal-delay-3">
+                            Boek een behandeling
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ══ FOOTER ══ -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Brand -->
+                <div>
+                    <div class="footer-brand">Serenova</div>
+                    <p class="footer-tagline">Een heiligdom van rust en verwennerij in het hart van Gent.</p>
+                    <div class="footer-socials">
+                        <!-- Instagram -->
+                        <a href="#" class="footer-social" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-linecap="round" stroke-width="2" />
+                            </svg>
+                        </a>
+                        <!-- Facebook -->
+                        <a href="#" class="footer-social" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                            </svg>
+                        </a>
+                        <!-- Pinterest -->
+                        <a href="#" class="footer-social" aria-label="Pinterest">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.03-2.83.19-.77 1.26-5.3 1.26-5.3s-.32-.64-.32-1.59c0-1.49.87-2.6 1.94-2.6.92 0 1.36.69 1.36 1.52 0 .92-.59 2.31-.89 3.6-.25 1.07.53 1.95 1.58 1.95 1.9 0 3.18-2.4 3.18-5.23 0-2.16-1.46-3.77-3.89-3.77-2.84 0-4.63 2.13-4.63 4.51 0 .82.24 1.39.61 1.84.17.2.19.28.13.51-.04.16-.14.55-.18.71-.06.23-.24.31-.44.23-1.62-.67-2.37-2.46-2.37-4.47 0-3.35 2.84-7.37 8.48-7.37 4.56 0 7.56 3.32 7.56 6.89 0 4.74-2.62 8.28-6.47 8.28-1.3 0-2.52-.7-2.94-1.5l-.82 3.18c-.26.97-.94 2.18-1.44 2.96.82.25 1.69.38 2.58.38 5.52 0 10-4.48 10-10S17.52 2 12 2z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Behandelingen -->
+                <div>
+                    <div class="footer-col-title">Behandelingen</div>
+                    <ul class="footer-links">
+                        <li><a href="#treatments">Hot Stone Massage</a></li>
+                        <li><a href="#treatments">Aromatherapie</a></li>
+                        <li><a href="#treatments">Hammam Ritueel</a></li>
+                        <li><a href="#treatments">Gezichtsverzorging</a></li>
+                        <li><a href="#treatments">Rozenbad Ritueel</a></li>
+                    </ul>
+                </div>
+
+                <!-- Info -->
+                <div>
+                    <div class="footer-col-title">Info</div>
+                    <ul class="footer-links">
+                        <li><a href="#intro">Onze filosofie</a></li>
+                        <li><a href="#team">Het team</a></li>
+                        <li><a href="#testimonials">Ervaringen</a></li>
+                        <li><a href="#">Cadeaubonnen</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <div class="footer-col-title">Contact</div>
+                    <div class="footer-contact">
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                                    stroke-linecap="round" />
+                                <circle cx="12" cy="9" r="2.5" />
+                            </svg>
+                            Koningstraat 48, 9000 Gent
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.85 9.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012.76 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.74a16 16 0 006.35 6.35l1.1-1.1a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                                    stroke-linecap="round" />
+                            </svg>
+                            +32 9 123 45 67
+                        </div>
+                        <div class="footer-contact-item">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    stroke-linecap="round" />
+                                <polyline points="22,6 12,13 2,6" stroke-linecap="round" />
+                            </svg>
+                            hallo@serenova.be
+                        </div>
+                    </div>
+                    <div class="footer-hours">
+                        Ma–Za: 9:00–20:00<br>
+                        Zo: 10:00–18:00
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <span>&copy; 2026 Serenova Spa &amp; Wellness</span>
+                <span>
+                    <a href="#">Privacy</a> &middot;
+                    <a href="#">Voorwaarden</a> &middot;
+                    <a href="#">Cookies</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ══ BOOKING MODAL ══ -->
+    <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal">
+            <div id="modalFormContent">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="modalTitle">Boek een<br>behandeling</h2>
+                    <button class="modal-close" id="modalClose" aria-label="Sluiten">&#x2715;</button>
+                </div>
+                <form id="bookingForm" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">Voornaam</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Sophie" required
+                                autocomplete="given-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Achternaam</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Martens" required
+                                autocomplete="family-name">
+                        </div>
+                        <div class="form-group form-full">
+                            <label for="email">E-mailadres</label>
+                            <input type="email" id="email" name="email" placeholder="sophie@voorbeeld.be" required
+                                autocomplete="email">
+                        </div>
+                        <div class="form-group form-full">
+                            <label for="phone">Telefoonnummer</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+32 9 123 45 67" autocomplete="tel">
+                        </div>
+                        <div class="form-group form-full">
+                            <label for="treatment">Behandeling</label>
+                            <select id="treatment" name="treatment" required>
+                                <option value="" disabled selected>Kies een behandeling…</option>
+                                <option value="hotstone">Hot Stone Massage — 90 min · € 95</option>
+                                <option value="aromatherapie">Aromatherapie Massage — 75 min · € 85</option>
+                                <option value="gezicht">Luxe Gezichtsbehandeling — 60 min · € 75</option>
+                                <option value="antiage">Anti-Age Behandeling — 75 min · € 110</option>
+                                <option value="hammam">Hammam Ritueel — 120 min · € 130</option>
+                                <option value="rozenbad">Rozenbad Ritueel — 100 min · € 145</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Datum</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Tijdstip</label>
+                            <select id="time" name="time" required>
+                                <option value="" disabled selected>Kies een tijdstip</option>
+                                <option>09:00</option>
+                                <option>10:00</option>
+                                <option>11:00</option>
+                                <option>12:00</option>
+                                <option>13:00</option>
+                                <option>14:00</option>
+                                <option>15:00</option>
+                                <option>16:00</option>
+                                <option>17:00</option>
+                                <option>18:00</option>
+                                <option>19:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-full">
+                            <label for="notes">Opmerkingen</label>
+                            <textarea id="notes" name="notes"
+                                placeholder="Specifieke wensen, allergieën of andere opmerkingen…"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-submit">Bevestig reservering</button>
+                </form>
+            </div>
+
+            <div class="modal-success" id="modalSuccess">
+                <svg viewBox="0 0 56 56" fill="none" stroke="currentColor">
+                    <circle cx="28" cy="28" r="26" stroke-width="1.5" />
+                    <path d="M16 28l8 9 16-18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <h3>Reservering ontvangen!</h3>
+                <p>Bedankt voor jouw boeking. We bevestigen je afspraak snel via e-mail. Tot snel bij Serenova.</p>
+                <button class="btn-submit" id="closeSuccess" style="margin-top:24px;">Sluiten</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ══ SCRIPTS ══ -->
+    <script src="js/main.js?v=5"></script>
+</body>
+
+</html>

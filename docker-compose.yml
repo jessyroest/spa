@@ -1,0 +1,9 @@
+services:
+  serenova-spa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: serenova-spa
+    ports:
+      - "8090:80"
+    restart: unless-stopped
