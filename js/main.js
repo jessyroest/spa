@@ -159,9 +159,98 @@ closeSuccess.addEventListener('click', () => {
   }, 420);
 });
 
-/* ── 8. PAGE FADE IN ─────────────────────────────────────────── */
-document.documentElement.style.opacity = '0';
+/* ── 8. FLOWING MENU (Signature Rituals) ─────────────────────── */
+function initFlowingMenu() {
+  const menuItems = document.querySelectorAll('.menu__item');
+  if (!menuItems.length) return;
+
+  const animationDefaults = { duration: 0.6, ease: 'expo.out' };
+  const speed = 15; // Loop duration in seconds
+
+  const distMetric = (x, y, x2, y2) => {
+    const xDiff = x - x2;
+    const yDiff = y - y2;
+    return xDiff * xDiff + yDiff * yDiff;
+  };
+
+  const findClosestEdge = (mouseX, mouseY, width, height) => {
+    const topEdgeDist = distMetric(mouseX, mouseY, width / 2, 0);
+    const bottomEdgeDist = distMetric(mouseX, mouseY, width / 2, height);
+    return topEdgeDist < bottomEdgeDist ? 'top' : 'bottom';
+  };
+
+  menuItems.forEach(item => {
+    const text = item.querySelector('.menu__item-link').textContent;
+    const image = item.dataset.image;
+    const marquee = item.querySelector('.marquee');
+    const marqueeInner = item.querySelector('.marquee__inner');
+    const link = item.querySelector('.menu__item-link');
+
+    // 1. Calculate and add repetitions
+    const calculateRepetitions = () => {
+      const viewportWidth = window.innerWidth;
+      // Temp measure width of one part
+      const tempPart = document.createElement('div');
+      tempPart.className = 'marquee__part';
+      tempPart.innerHTML = `<span>${text}</span><div class="marquee__img" style="background-image:url(${image})"></div>`;
+      document.body.appendChild(tempPart);
+      const contentWidth = tempPart.offsetWidth;
+      document.body.removeChild(tempPart);
+
+      if (contentWidth === 0) return;
+      const needed = Math.ceil(viewportWidth / contentWidth) + 2;
+      const count = Math.max(4, needed);
+
+      let html = '';
+      for (let i = 0; i < count; i++) {
+        html += `<div class="marquee__part">
+          <span>${text}</span>
+          <div class="marquee__img" style="background-image: url(${image})"></div>
+        </div>`;
+      }
+      marqueeInner.innerHTML = html;
+
+      // Start GSAP Loop
+      gsap.to(marqueeInner, {
+        x: -contentWidth,
+        duration: speed,
+        ease: 'none',
+        repeat: -1
+      });
+    };
+
+    calculateRepetitions();
+    window.addEventListener('resize', calculateRepetitions);
+
+    // 2. Hover logic
+    link.addEventListener('mouseenter', ev => {
+      const rect = item.getBoundingClientRect();
+      const x = ev.clientX - rect.left;
+      const y = ev.clientY - rect.top;
+      const edge = findClosestEdge(x, y, rect.width, rect.height);
+
+      gsap.timeline({ defaults: animationDefaults })
+        .set(marquee, { y: edge === 'top' ? '-101%' : '101%' }, 0)
+        .set(marqueeInner, { y: edge === 'top' ? '101%' : '-101%' }, 0)
+        .to([marquee, marqueeInner], { y: '0%' }, 0);
+    });
+
+    link.addEventListener('mouseleave', ev => {
+      const rect = item.getBoundingClientRect();
+      const x = ev.clientX - rect.left;
+      const y = ev.clientY - rect.top;
+      const edge = findClosestEdge(x, y, rect.width, rect.height);
+
+      gsap.timeline({ defaults: animationDefaults })
+        .to(marquee, { y: edge === 'top' ? '-101%' : '101%' }, 0)
+        .to(marqueeInner, { y: edge === 'top' ? '101%' : '-101%' }, 0);
+    });
+  });
+}
+
+// Update initialization
 window.addEventListener('load', () => {
   document.documentElement.style.transition = 'opacity .5s ease';
   document.documentElement.style.opacity = '1';
+  initFlowingMenu();
 });
